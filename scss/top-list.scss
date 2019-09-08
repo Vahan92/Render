@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+.top-list {
+     > div:nth-child(1) {        
+        background-color: $blue_medium;        
+        > div:nth-child(2) {
+            p:nth-child(1) {
+                color: white;
+            }
+            div {             
+                background-color: #4FCEFF;
+            }
+            p:nth-child(3) {
+                color: white;
+            }
+        }        
+    }
+    > div:nth-child(2) {
+        background-image: url("../assets/images/Union\ 14.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 371px;
+        display: flex;
+        justify-content: center;
+        > div {
+            margin: 0 10px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 6px 12px #0052E01A;
+            border-radius: 10px;
+            width: 240px;
+            height: 90px;
+            position: relative;
+            > img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                max-width: 146px;
+            }
+        }
+    }
+}
+
+@media (min-width:1500px) {
+    .top-list {        
+       > div:nth-child(2) {
+            height: 500px;          
+       }
+   }
+}
+
+
+@media (max-width:768px) {
+    .top-list {
+        > div:nth-child(1) {
+            padding-top: 30px;
+            justify-content: center;           
+           > div:nth-child(2) {
+               width: 95%;               
+           }
+       }
+   }
+}
+
+@media (max-width:480px) {
+    .top-list {        
+       > div:nth-child(2) {
+        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        > div {
+            margin:  10px 0;            
+        }
+       }
+   }
+}

@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+.reviews {
+    > div {
+        > div:nth-child(2) {
+            p {
+                color: $blue_medium;                
+            }
+            div {
+                background-color: #F37C6A;
+            }
+        }
+    }
+}
+
+.videos {
+    display: flex;
+    padding: 0 34px;
+}
+
+.users-speak {
+    padding: 0;
+}
+
+@media (max-width:860px) {
+    .videos {
+        flex-direction: column;
+    }
+    .users-speak {
+        div:nth-child(2) {
+            margin: 0 auto;
+        }
+        div:nth-child(3) {
+            display: none;
+        }
+    }
+}

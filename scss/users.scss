@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.mutual-love {
+    p {
+        text-align: center;
+    }
+    p:nth-child(1) {
+        color: #252E48;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    p:nth-child(2) {
+        color: $blue_medium;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p:nth-child(3) {
+        color: $grey_dark;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mutual-love {    
+        p:nth-child(2) {            
+            font-size: 50px;            
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.canvas {
+    > div:nth-child(1) {
+        position: relative;
+        height: 522px;
+        background-image: url('../assets/images/canva.svg');
+        background-repeat:no-repeat;
+        background-position: center center;          
+    }
+}
+
+.canvas-paint {
+    width: 395px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-53%, 0);
+        height: 215px;
+        z-index: 10;
+        box-shadow: 0px 3px 30px #387DFF4D;
+        border-radius: 10px;
+        text-align: center;
+    background-color: white;
+    > div {
+        width: 226px;
+        height: 71px;
+        margin: 25px auto;
+        > p {
+            margin: 0;
+        }
+    }
+    > p {
+        width: 136px;
+        margin: 0 auto;
+        border-bottom: 1px solid #EAF1FF;
+        line-height: 0.1em;
+        > span {
+            background:#fff; 
+            padding:0 10px;
+        }
+    }
+    button {
+        color: white;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .canvas{ margin-left: 0;}
+}
+
+@media (max-width: 480px) {
+    .canvas-paint {        
+        width: 320px;       
+    }
+}
+
+@media (max-width: 768px) {
+    .canvas {        
+        div:nth-child(2) {
+            p {
+                text-align: center;
+            }
+        }      
+    }
+}

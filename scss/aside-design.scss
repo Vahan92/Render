@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.aside-design {
+    p:nth-child(1) {
+        color: $blue_medium;
+    }
+    div {             
+        background-color: #4FCEFF;
+    }
+    p:nth-child(2) {
+        color: #363F5A;
+    }
+}
+
+.benefits {
+    text-align: center;
+    p:nth-child(1) {
+        color: $purple_medium;
+    }
+    div {             
+        background-color: #4FCEFF;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    p:nth-child(2) {
+        color: #363F5A;
+    }
+}

@@ -1,0 +1,17 @@
+.aside-ml {
+    p:nth-child(1) {
+        color: $purple_medium;
+    }
+    div {             
+        background-color: #4FDC6F;
+    }
+    p:nth-child(2) {
+        color: #363F5A;
+    }    
+}
+
+@media (max-width: 768px) {
+    .aside-ml {
+        text-align: center;
+    }
+}

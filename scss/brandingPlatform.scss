@@ -1,0 +1,44 @@
+.branding-platform {
+    position: relative;
+    display: block;
+    text-align: center;
+    img {
+        width: 100%;
+    }
+    img:nth-child(2) {
+        margin-top: -5px;
+    }
+   > div {
+        width: 60%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+        p {
+            font-size: 32px;
+            color: white;
+        }        
+}
+
+@media (max-width:760px) {
+    .branding-platform {
+        > div {
+            top: 30%;
+            p {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .branding-platform {
+        margin-bottom: 10px;
+        > div {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
